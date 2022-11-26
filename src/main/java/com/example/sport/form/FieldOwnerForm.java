@@ -9,5 +9,4 @@ import java.util.List;
 public class FieldOwnerForm {
     private String name;
     private String email;
-    private List<SportFieldModel> sportFieldList;
 }

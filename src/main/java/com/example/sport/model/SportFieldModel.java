@@ -1,6 +1,8 @@
 package com.example.sport.model;
 
 import javax.persistence.*;
+
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
@@ -8,13 +10,14 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "sport_field")
 @NoArgsConstructor
+@Data
 public class SportFieldModel extends BaseDao{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "field_name", nullable = false)
     private String name;
 
     @Column(name = "description", nullable = false)
@@ -29,9 +32,9 @@ public class SportFieldModel extends BaseDao{
     @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
 
-    @ManyToOne
-    @Column(name = "field_owner", nullable = false)
-    private FieldOwnerModel fieldOwner;
+//    @ManyToOne
+//    @Column(name = "field_owner", nullable = false)
+//    private FieldOwnerModel fieldOwner;
 
     @Column(name = "open_schedule", nullable = false)
     private String open_schedule;
