@@ -10,7 +10,6 @@ public class SportFieldForm {
     private String category;
     private String address;
     private String phoneNumber;
-    private FieldOwnerModel fieldOwner;
-    private String open_schedule;
+    private String openSchedule;
     private Double price;
 }

@@ -37,7 +37,7 @@ public class SportFieldModel extends BaseDao{
 //    private FieldOwnerModel fieldOwner;
 
     @Column(name = "open_schedule", nullable = false)
-    private String open_schedule;
+    private String openSchedule;
 
     @Column(name = "price", nullable = false)
     private Double price;
